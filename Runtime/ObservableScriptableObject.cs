@@ -53,6 +53,11 @@ namespace MWUtilityScripts
             }
         }
 
+        public void AddCleanupAction(Action action)
+        {
+            _unregisterActions.Add(action);
+        }
+
         /// <summary>
         /// Raises the <see cref="PropertyChanged"/> event.
         /// </summary>

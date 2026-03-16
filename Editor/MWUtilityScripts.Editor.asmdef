@@ -1,5 +1,5 @@
 {
-    "name": "com.mw.utilityscripts.Editor",
+    "name": "MWUtilityScripts.Editor",
     "rootNamespace": "MWUtilityScripts",
     "references": [],
     "includePlatforms": [
