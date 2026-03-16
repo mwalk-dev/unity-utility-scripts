@@ -1,7 +1,8 @@
+#if HAS_ANIMANCER
 using Animancer;
 using UnityEngine;
 
-namespace Runtime.Animancer
+namespace MWUtilityScripts.Animancer
 {
     public static class MixerStateExtensions
     {
@@ -68,3 +69,4 @@ namespace Runtime.Animancer
         }
     }
 }
+#endif

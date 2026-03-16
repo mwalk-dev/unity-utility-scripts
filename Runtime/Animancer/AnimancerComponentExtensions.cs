@@ -1,7 +1,8 @@
+#if HAS_ANIMANCER
 using Animancer;
 using UnityEngine;
 
-namespace Runtime.Animancer
+namespace MWUtilityScripts.Animancer
 {
     public static class AnimancerComponentExtensions
     {
@@ -64,3 +65,4 @@ namespace Runtime.Animancer
             cmp.StopOnLayer(LOWER_BODY_ACTION_LAYER, fadeDuration);
     }
 }
+#endif

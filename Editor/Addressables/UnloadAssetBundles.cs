@@ -1,7 +1,8 @@
+#if HAS_ADDRESSABLES
 using UnityEditor;
 using UnityEngine;
 
-namespace Editor.Addressables
+namespace MWUtilityScripts.Editor.Addressables
 {
     // See https://discussions.unity.com/t/asset-is-not-released-from-ondestroy-when-exiting-play-mode/911095/3
     // for a description of the bug this is working around
@@ -22,3 +23,4 @@ namespace Editor.Addressables
         }
     }
 }
+#endif

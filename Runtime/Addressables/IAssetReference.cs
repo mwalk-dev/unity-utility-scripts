@@ -1,3 +1,4 @@
+#if HAS_ADDRESSABLES
 #if HAS_UNITASK
 using Cysharp.Threading.Tasks;
 #endif
@@ -29,3 +30,4 @@ namespace MWUtilityScripts.Addressables
 #endif
     }
 }
+#endif

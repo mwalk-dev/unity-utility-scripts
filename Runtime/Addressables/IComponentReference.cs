@@ -1,3 +1,4 @@
+#if HAS_ADDRESSABLES
 using UnityEngine;
 using UnityEngine.ResourceManagement.AsyncOperations;
 
@@ -18,3 +19,4 @@ namespace MWUtilityScripts.Addressables
         public void ReleaseInstance(AsyncOperationHandle<TComponent> op);
     }
 }
+#endif

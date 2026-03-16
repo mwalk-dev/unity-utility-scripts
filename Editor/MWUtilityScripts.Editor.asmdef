@@ -1,14 +1,22 @@
 {
-    "name": "com.mw.utilityscripts.Runtime",
+    "name": "com.mw.utilityscripts.Editor",
     "rootNamespace": "MWUtilityScripts",
     "references": [],
-    "includePlatforms": [],
+    "includePlatforms": [
+        "Editor"
+    ],
     "excludePlatforms": [],
     "allowUnsafeCode": false,
     "overrideReferences": false,
     "precompiledReferences": [],
     "autoReferenced": true,
     "defineConstraints": [],
-    "versionDefines": [],
+    "versionDefines": [
+        {
+            "name": "com.unity.addressables",
+            "expression": "",
+            "define": "HAS_ADDRESSABLES"
+        }
+    ],
     "noEngineReferences": false
 }
