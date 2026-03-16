@@ -6,7 +6,7 @@ using UnityEngine;
 using UnityEngine.ResourceManagement.AsyncOperations;
 
 // Slightly modified from https://github.com/Unity-Technologies/Addressables-Sample/blob/master/Basic/ComponentReference/Assets/Samples/Addressables/1.19.19/ComponentReference/ComponentReference.cs
-namespace Addressables
+namespace MWUtilityScripts.Addressables
 {
     /// <summary>
     /// Creates an AssetReference that is restricted to having a specific Component.

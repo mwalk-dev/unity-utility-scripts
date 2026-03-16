@@ -1,7 +1,7 @@
 using UnityEngine;
 using UnityEngine.ResourceManagement.AsyncOperations;
 
-namespace Addressables
+namespace MWUtilityScripts.Addressables
 {
     public interface IComponentReference<TComponent> : IAssetReference<GameObject>
         where TComponent : MonoBehaviour

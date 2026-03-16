@@ -3,7 +3,7 @@ using Cysharp.Threading.Tasks;
 #endif
 using UnityEngine;
 
-namespace Addressables
+namespace MWUtilityScripts.Addressables
 {
     public interface IAssetReference
     {

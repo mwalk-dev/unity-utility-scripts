@@ -8,7 +8,7 @@ using UnityEditor.AddressableAssets.Settings;
 using UnityEngine;
 using UnityEngine.ResourceManagement.AsyncOperations;
 
-namespace Editor.Addressables
+namespace MWUtilityScripts.Addressables
 {
     public static class FindAddressableAsset
     {

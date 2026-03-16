@@ -4,7 +4,7 @@ using Cysharp.Threading.Tasks;
 #endif
 using UnityEngine;
 
-namespace Addressables
+namespace MWUtilityScripts.Addressables
 {
     // This only exists so we can apply the IAssetReference interface
     public class AssetReferenceGameObject
