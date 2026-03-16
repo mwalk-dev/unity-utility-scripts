@@ -1,7 +1,7 @@
 using System.Linq;
 using UnityEditor;
 
-namespace Editor
+namespace MWUtilityScripts.Editor
 {
     public static class EditorBuildUtil
     {
