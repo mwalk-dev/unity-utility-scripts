@@ -52,11 +52,43 @@ namespace MWUtilityScripts
                 }
             }
         }
-
-        public void AddCleanupAction(Action action)
+        
+#if MWUTILITYSCRIPTS_UNITY_ATOMS
+        // Not sure if this is worth having, because in cases where the atom's value should be exposed
+        // as a property, we still have to write the property. So additionally registering it is extra
+        // code even if we don't have to call into SetProperty in the setter. Do we have a case where
+        // we wouldn't do it the same way and would need RegisterAtom?
+        // We need this to capture changes to the atom that don't flow through our code, e.g. done
+        // through inspector
+        protected void RegisterAtom<T, P, E1, E2, F>(AtomVariable<T, P, E1, E2, F> atomVariable, string propertyName)
+            where P : struct, IPair<T>
+            where E1 : AtomEvent<T>
+            where E2 : AtomEvent<P>
+            where F : AtomFunction<T, T>
         {
-            _unregisterActions.Add(action);
+#if UNITY_EDITOR
+            if (!EditorApplication.isPlayingOrWillChangePlaymode)
+                return;
+#endif
+            // Debug.Log($"[{nameof(ObservableScriptableObject)}] Registered atom event handler for {propertyName}");
+            var evt = atomVariable.GetEvent<E1>();
+            evt.Register(OnValueChanged);
+            _unregisterActions.Add(() =>
+            {
+                // Debug.Log($"[{nameof(ObservableScriptableObject)}] Unregistered atom event handler for {propertyName}");
+                evt.Unregister(OnValueChanged);
+            });
+            return;
+
+            void OnValueChanged(T value)
+            {
+                // Debug.Log(
+                //     $"[{nameof(ObservableScriptableObject)}] Atom change event fired for {propertyName} with value {value}"
+                // );
+                OnPropertyChanged(propertyName);
+            }
         }
+#endif
 
         /// <summary>
         /// Raises the <see cref="PropertyChanged"/> event.
