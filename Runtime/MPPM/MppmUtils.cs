@@ -1,7 +1,7 @@
 using System;
 using System.Linq;
 
-namespace Runtime.MPPM
+namespace MPPM
 {
     public static class MppmUtils
     {
