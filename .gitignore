@@ -97,3 +97,10 @@ InitTestScene*.unity*
 
 # Auto-generated scenes by play mode tests
 /[Aa]ssets/[Ii]nit[Tt]est[Ss]cene*.unity*
+
+# Everything under Assets, it's all test imports of .unitypackage files for integration
+/[Aa]ssets/**
+/[Pp]roject[Ss]ettings/**
+
+# Rider config
+/.idea/**

@@ -1,0 +1,11 @@
+{
+  "name": "com.mw.utilityscripts",
+  "version": "0.0.1",
+  "displayName": "Utility Scripts",
+  "description": "A collection of generally useful scripts for Unity Projects",
+  "unity": "6000.3",
+  "author": {
+    "name": "Matt Walker",
+    "url": "https://github.com/mwalk-dev/unity-utility-scripts"
+  }
+}
