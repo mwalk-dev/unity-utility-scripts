@@ -2,6 +2,9 @@
 // everything in it is editor-only so failing to wrap calling code similarly will cause compilation failures
 #if UNITY_EDITOR && HAS_ADDRESSABLES
 using System.Collections.Generic;
+#if HAS_UNITASK
+using Cysharp.Threading.Tasks;
+#endif
 using UnityEditor;
 using UnityEditor.AddressableAssets;
 using UnityEditor.AddressableAssets.Settings;
