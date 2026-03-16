@@ -1,6 +1,9 @@
 #if HAS_ADDRESSABLES
 using UnityEngine;
 using UnityEngine.ResourceManagement.AsyncOperations;
+#if HAS_UNITASK
+using Cysharp.Threading.Tasks;
+#endif
 
 namespace MWUtilityScripts.Addressables
 {
@@ -17,6 +20,10 @@ namespace MWUtilityScripts.Addressables
     
         public bool ValidateAsset(Object obj);
         public void ReleaseInstance(AsyncOperationHandle<TComponent> op);
+        
+#if HAS_UNITASK
+        UniTask<TComponent> LoadAssetAsyncTask();
+#endif
     }
 }
 #endif

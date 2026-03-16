@@ -1,7 +1,9 @@
 {
     "name": "MWUtilityScripts.Editor",
     "rootNamespace": "MWUtilityScripts",
-    "references": [],
+    "references": [
+        "GUID:1be6237c518e988488a9cf83abe8fb22"
+    ],
     "includePlatforms": [
         "Editor"
     ],
