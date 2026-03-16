@@ -1,7 +1,7 @@
 using System;
 using UnityEngine;
 
-namespace Runtime
+namespace MWUtilityScripts.UnityExtensions
 {
     public static class TransformExtensions
     {

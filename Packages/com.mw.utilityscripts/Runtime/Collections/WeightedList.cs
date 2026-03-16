@@ -6,9 +6,9 @@ using System;
 using System.Collections;
 using System.Collections.Generic;
 using System.Text;
-using static Runtime.WeightErrorHandlingType;
+using static MWUtilityScripts.Collections.WeightErrorHandlingType;
 
-namespace Runtime
+namespace MWUtilityScripts.Collections
 {
     /// <summary>
     /// This implements an algorithm for sampling from a discrete probability distribution via a generic list

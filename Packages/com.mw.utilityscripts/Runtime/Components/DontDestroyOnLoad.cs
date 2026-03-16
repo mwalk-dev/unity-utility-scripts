@@ -1,6 +1,6 @@
 using UnityEngine;
 
-namespace Runtime
+namespace MWUtilityScripts.Components
 {
     /// <summary>
     /// Marks this GameObject to not be destroyed on scene change

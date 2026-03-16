@@ -1,8 +1,8 @@
 using System;
 using UnityEngine;
-using static Runtime.Physics.ICastCollider;
+using static MWUtilityScripts.Physics.ICastCollider;
 
-namespace Runtime.Physics
+namespace MWUtilityScripts.Physics
 {
 	public delegate void OnRaycastCollision(ref RaycastHit hit, ref Vector3 velocity);
 

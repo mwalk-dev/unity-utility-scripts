@@ -4,7 +4,7 @@ using System.Reflection;
 using UnityEditor;
 using UnityEngine;
 
-namespace Runtime
+namespace MWUtilityScripts.UnityExtensions
 {
     public static class MonoBehaviourExtensions
     {

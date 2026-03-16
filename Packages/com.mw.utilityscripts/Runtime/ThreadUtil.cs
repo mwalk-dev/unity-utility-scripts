@@ -2,7 +2,7 @@
 using System.Threading;
 using UnityEditor;
 
-namespace Runtime
+namespace MWUtilityScripts
 {
     [InitializeOnLoad]
     public static class ThreadUtil

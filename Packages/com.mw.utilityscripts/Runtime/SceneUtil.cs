@@ -1,6 +1,6 @@
 using UnityEngine.SceneManagement;
 
-namespace Runtime
+namespace MWUtilityScripts
 {
     public static class SceneUtil
     {

@@ -4,7 +4,7 @@ using System.Threading.Tasks;
 using UnityEngine;
 using UnityEngine.Networking;
 
-namespace Runtime
+namespace MWUtilityScripts
 {
     public static class NetworkUtil
     {

@@ -1,7 +1,7 @@
 using UnityEditor;
 using UnityEngine;
 
-namespace Runtime
+namespace MWUtilityScripts
 {
     /// <summary>
     /// Note that this generally does NOT work for addressable ScriptableObjects, as the instance that has its

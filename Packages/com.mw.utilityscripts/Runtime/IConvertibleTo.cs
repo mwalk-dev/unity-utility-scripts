@@ -1,4 +1,4 @@
-namespace Runtime
+namespace MWUtilityScripts
 {
     public interface IConvertibleTo<out T>
     {

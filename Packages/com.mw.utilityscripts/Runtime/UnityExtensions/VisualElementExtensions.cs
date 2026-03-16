@@ -1,7 +1,7 @@
 using UnityEngine;
 using UnityEngine.UIElements;
 
-namespace Runtime
+namespace MWUtilityScripts.UnityExtensions
 {
     public static class VisualElementExtensions
     {

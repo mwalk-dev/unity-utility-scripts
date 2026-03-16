@@ -3,7 +3,7 @@
 
 using UnityEngine;
 
-namespace Runtime
+namespace MWUtilityScripts.UnityExtensions
 {
     public static class GizmosExtensions
     {

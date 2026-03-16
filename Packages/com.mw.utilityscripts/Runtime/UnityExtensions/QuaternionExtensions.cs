@@ -1,6 +1,6 @@
 using UnityEngine;
 
-namespace Runtime
+namespace MWUtilityScripts.UnityExtensions
 {
     // From https://discussions.unity.com/t/finding-pitch-roll-yaw-from-quaternions/65684/4
     public static class QuaternionExtensions

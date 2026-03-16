@@ -1,7 +1,7 @@
 using System.Collections.Generic;
 using System.Linq;
 
-namespace Runtime.CLR
+namespace MWUtilityScripts.CLR
 {
     public static class EnumerableExtensions
     {

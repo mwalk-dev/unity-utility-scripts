@@ -1,6 +1,6 @@
 using UnityEngine;
 
-namespace Runtime
+namespace MWUtilityScripts.Components
 {
     /// <summary>
     /// A simple behavior to rotate a GameObject at a constant rate

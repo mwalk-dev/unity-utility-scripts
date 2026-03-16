@@ -1,6 +1,6 @@
 using UnityEngine;
 
-namespace Runtime.Physics
+namespace MWUtilityScripts.Physics
 {
 	public interface ICastCollider
     {

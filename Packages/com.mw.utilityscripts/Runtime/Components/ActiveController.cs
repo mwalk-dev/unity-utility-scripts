@@ -1,6 +1,6 @@
 using UnityEngine;
 
-namespace Runtime
+namespace MWUtilityScripts.Components
 {
     /// <summary>
     /// Activates and deactivates other GameObjects and/or MonoBehaviours in sync with itself

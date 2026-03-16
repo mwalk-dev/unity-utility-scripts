@@ -1,8 +1,8 @@
 using System;
 using UnityEngine;
-using static Runtime.Physics.ICastCollider;
+using static MWUtilityScripts.Physics.ICastCollider;
 
-namespace Runtime.Physics
+namespace MWUtilityScripts.Physics
 {
     // Largely C&P from RaycastBoxCollider, there is probably a lot of opportunity to consolidate
     public class SpherecastCollider : MonoBehaviour, ICastCollider

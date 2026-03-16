@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-namespace Runtime
+namespace MWUtilityScripts.Components
 {
 #pragma warning disable IDE1006 // Naming Styles
     /// <summary>

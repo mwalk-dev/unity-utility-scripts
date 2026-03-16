@@ -1,7 +1,7 @@
 using System;
 using System.Collections.Generic;
 
-namespace Runtime.CLR
+namespace MWUtilityScripts.CLR
 {
     public static class LinqExtensions
     {

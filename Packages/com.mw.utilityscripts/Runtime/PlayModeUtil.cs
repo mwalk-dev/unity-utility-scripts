@@ -1,6 +1,6 @@
 using UnityEditor;
 
-namespace Runtime
+namespace MWUtilityScripts
 {
 #if UNITY_EDITOR
     [InitializeOnLoad]

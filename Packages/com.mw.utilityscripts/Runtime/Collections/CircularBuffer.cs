@@ -2,7 +2,7 @@ using System;
 using System.Collections;
 using System.Collections.Generic;
 
-namespace Runtime
+namespace MWUtilityScripts.Collections
 {
     /// <inheritdoc/>
     /// <summary>

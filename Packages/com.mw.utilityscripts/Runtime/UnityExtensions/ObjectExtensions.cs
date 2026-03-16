@@ -3,7 +3,7 @@ using UnityEditor;
 using UnityEngine;
 using Object = UnityEngine.Object;
 
-namespace Runtime
+namespace MWUtilityScripts.UnityExtensions
 {
     public static class ObjectExtensions
     {

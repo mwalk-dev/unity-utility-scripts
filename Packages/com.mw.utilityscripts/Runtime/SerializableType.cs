@@ -1,6 +1,6 @@
 using UnityEngine;
 
-namespace Runtime
+namespace MWUtilityScripts
 {
     [System.Serializable]
     public class SerializableType : ISerializationCallbackReceiver

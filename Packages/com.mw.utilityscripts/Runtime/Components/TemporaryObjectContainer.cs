@@ -1,6 +1,6 @@
 using UnityEngine;
 
-namespace Runtime
+namespace MWUtilityScripts.Components
 {
     public class TemporaryObjectContainer : MonoBehaviour
     {

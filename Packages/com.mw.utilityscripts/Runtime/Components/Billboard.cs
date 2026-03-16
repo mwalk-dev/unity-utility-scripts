@@ -1,7 +1,7 @@
 using System;
 using UnityEngine;
 
-namespace Runtime
+namespace MWUtilityScripts.Components
 {
     /// <summary>
     /// Ensures that the specified GameObject is always rotated to face the camera

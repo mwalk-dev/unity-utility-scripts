@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Reflection;
 
-namespace Runtime.CLR
+namespace MWUtilityScripts.CLR
 {
     public static class AssemblyExtensions
     {

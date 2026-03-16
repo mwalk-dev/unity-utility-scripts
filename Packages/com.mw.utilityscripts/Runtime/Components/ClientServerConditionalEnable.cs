@@ -1,7 +1,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-namespace Runtime
+namespace MWUtilityScripts.Components
 {
 	/// <summary>
 	/// Maintains lists of GameObjects and/or MonoBehaviours that should only be enabled in client or server builds
