@@ -14,7 +14,16 @@ namespace MWUtilityScripts.MPPM
 #if !UNITY_EDITOR
             return false;
 #else
-            return !Unity.Multiplayer.PlayMode.CurrentPlayer.IsMainEditor;
+            try
+            {
+                // This can apparently throw, as of 6000.3.11f1. Probably due to the project not having been
+                // explicitly configured?
+                return !Unity.Multiplayer.PlayMode.CurrentPlayer.IsMainEditor;
+            }
+            catch
+            {
+                return false;
+            }
 #endif
         }
 
@@ -23,16 +32,31 @@ namespace MWUtilityScripts.MPPM
 #if !UNITY_EDITOR
             return false;
 #else
-            return Unity.Multiplayer.PlayMode.CurrentPlayer.IsMainEditor;
+            try
+            {
+                return Unity.Multiplayer.PlayMode.CurrentPlayer.IsMainEditor;
+            }
+            catch
+            {
+                return true;
+            }
 #endif
         }
 
         public static bool HasTag(string tag)
         {
-            return Unity.Multiplayer.PlayMode.CurrentPlayer
-                .Tags
-                .Select(existingTag => string.Equals(existingTag, tag, StringComparison.InvariantCultureIgnoreCase))
-                .FirstOrDefault();
+            try
+            {
+                return Unity
+                    .Multiplayer.PlayMode.CurrentPlayer.Tags.Select(existingTag =>
+                        string.Equals(existingTag, tag, StringComparison.InvariantCultureIgnoreCase)
+                    )
+                    .FirstOrDefault();
+            }
+            catch
+            {
+                return false;
+            }
         }
     }
 }
