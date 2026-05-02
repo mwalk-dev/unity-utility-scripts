@@ -24,6 +24,7 @@ namespace MWUtilityScripts.MCP
                     ImportAssetOptions.ForceSynchronousImport | ImportAssetOptions.ForceUpdate
                 );
                 CompilationPipeline.RequestScriptCompilation();
+                EditorApplication.QueuePlayerLoopUpdate();
 
                 return Response.Success("Asset refresh and domain reload completed.");
             }
