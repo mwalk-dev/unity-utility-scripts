@@ -3,7 +3,8 @@
     "rootNamespace": "MWUtilityScripts",
     "references": [
         "GUID:1be6237c518e988488a9cf83abe8fb22",
-        "GUID:2aae799fca8f4493ca5058f7a1210dd1"
+        "GUID:2aae799fca8f4493ca5058f7a1210dd1",
+        "UnityEditor.TestRunner"
     ],
     "includePlatforms": [
         "Editor"
@@ -24,6 +25,11 @@
             "name": "com.unity.ai.assistant",
             "expression": "",
             "define": "HAS_MCP"
+        },
+        {
+            "name": "com.unity.test-framework",
+            "expression": "",
+            "define": "HAS_UNITY_TEST_FRAMEWORK"
         }
     ],
     "noEngineReferences": false
